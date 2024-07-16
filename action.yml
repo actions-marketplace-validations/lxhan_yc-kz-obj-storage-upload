@@ -1,37 +1,37 @@
-name: 'YC Object Storage Upload'
-description: 'GitHub Action to upload files to Yandex Cloud Object Storage.'
-author: 'Nikolay Matrosov'
+name: "YC KZ Object Storage Upload"
+description: "GitHub Action to upload files to Yandex Cloud Object Storage in KZ region."
+author: "Nikolay Matrosov"
 inputs:
   yc-sa-json-credentials:
     required: true
-    description: 'Json containing authorized key for Service Account. More info https://cloud.yandex.ru/docs/container-registry/operations/authentication#sa-json'
+    description: "Json containing authorized key for Service Account. More info https://cloud.yandex.ru/docs/container-registry/operations/authentication#sa-json"
   bucket:
-    description: 'Object Storage bucket name for code'
-    default: ''
+    description: "Object Storage bucket name for code"
+    default: ""
     required: true
   prefix:
-    description: 'Prefix that will added to all keys.'
+    description: "Prefix that will added to all keys."
     required: false
-    default: ''
+    default: ""
   root:
-    description: 'Path that will considered as root.'
+    description: "Path that will considered as root."
     required: true
   include:
-    description: 'Patterns to include. Multiline'
-    default: '*'
+    description: "Patterns to include. Multiline"
+    default: "*"
     required: false
   exclude:
-    description: 'Exclude patterns. Multiline'
-    default: ''
+    description: "Exclude patterns. Multiline"
+    default: ""
     required: false
   clear:
-    description: 'Clear bucket before upload.'
-    default: 'false'
+    description: "Clear bucket before upload."
+    default: "false"
     required: false
 
 branding:
   color: blue
   icon: upload-cloud
 runs:
-  using: 'node20'
-  main: 'dist/index.js'
+  using: "node20"
+  main: "dist/index.js"
