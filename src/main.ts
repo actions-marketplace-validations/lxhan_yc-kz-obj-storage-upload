@@ -51,7 +51,7 @@ export async function run(): Promise<void> {
 		const tokenService = new IamTokenService(serviceAccountJson);
 
 		const s3Client = new S3Client({
-			region: "kz-1a",
+			region: "kz1",
 			endpoint: "https://storage.yandexcloud.kz",
 		});
 
