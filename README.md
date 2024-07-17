@@ -1,6 +1,7 @@
 ## GitHub Action to upload files to Yandex Cloud Object Storage in KZ region.
 
-> [!IMPORTANT] This is a fork of [this action](https://github.com/yc-actions/yc-obj-storage-upload)
+> [!IMPORTANT]
+> This is a fork of [this action](https://github.com/yc-actions/yc-obj-storage-upload)
 > modified to be used only in the Kazakhstan region while original action was primarily focused on the Russian region.
 
 The action uploads files from the given folder to Yandex Cloud Object Storage
