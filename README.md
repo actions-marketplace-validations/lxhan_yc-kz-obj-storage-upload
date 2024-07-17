@@ -1,5 +1,8 @@
 ## GitHub Action to upload files to Yandex Cloud Object Storage in KZ region.
 
+> [!NOTE] This is a fork of [this action](https://github.com/yc-actions/yc-obj-storage-upload)
+> modified to be used only in the Kazakhstan region while original action was primarily focused on the Russian region.
+
 The action uploads files from the given folder to Yandex Cloud Object Storage
 using Service Account Key as authorizations method.
 
@@ -18,7 +21,7 @@ using Service Account Key as authorizations method.
 ```yaml
 - name: Upload files to Object Storage
   id: s3-upload
-  uses: "lxhan/yc-obj-storage-upload@v2"
+  uses: "lxhan/yc-kz-obj-storage-upload@v2"
   with:
     yc-sa-json-credentials: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
     bucket: ${{ secrets.BUCKET }}
